@@ -4,64 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justice in Mental Health Experience | Consulting</title>
-    <!-- Alternative CSS stylesheet that works -->
-    <link href="https://cloudflare.com" rel="stylesheet">
+    
+    <!-- This loads the Tailwind engine so all the layout design works -->
+    <script src="https://tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
-    <!-- Hero Section -->
-    <header class="max-w-4xl mx-auto px-4 py-20 text-center">
-        <p class="text-indigo-600 font-bold tracking-wide uppercase text-sm mb-3">Justice in Mental Health Experience</p>
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
-            Bridging the gap between clinical data and raw human experience.
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm py-4 px-6 max-w-5xl mx-auto rounded-b-xl flex justify-between items-center mt-2">
+        <div class="font-extrabold text-lg tracking-tight text-gray-950">
+            JMH<span class="text-indigo-600">Experience</span>
+        </div>
+        <div>
+            <a href="mailto:jmexperience.consulting@gmail.com" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition">
+                Contact Me
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <header class="text-center py-20 px-6 max-w-4xl mx-auto">
+        <span class="text-xs font-bold tracking-widest text-indigo-600 uppercase bg-indigo-50 px-3 py-1 rounded-full">
+            Consulting Services
+        </span>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-950 mt-4 mb-6 leading-tight">
+            Justice in Mental Health Experience
         </h1>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
             A decade of professional copywriting meets deep, lived expertise in mental health, substance use, justice-impact, and TBI. I help organizations win grants, retain users, and design dignifying communication.
         </p>
-        <a href="mailto:jmexperience.consulting@gmail.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-lg shadow-md transition">
-            Book a 10-Minute Consultation
-        </a>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="mailto:jmexperience.consulting@gmail.com" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-xl shadow-md shadow-indigo-200 transition text-center">
+                Book a 10-Minute Consultation
+            </a>
+            <a href="#services" class="w-full sm:w-auto bg-white hover:bg-gray-50 text-gray-700 font-semibold px-8 py-4 rounded-xl border border-gray-200 shadow-sm transition text-center">
+                Learn More
+            </a>
+        </div>
     </header>
 
-    <!-- Services Section -->
-    <main class="max-w-5xl mx-auto px-4 py-12">
-        <h2 class="text-2xl font-bold text-center mb-12 text-gray-800">How I Help Your Organization</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            
-            <!-- Service 1 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                <h3 class="text-xl font-bold mb-3 text-indigo-600">Lived Experience Audits</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                    I review your public-facing messaging, intake forms, and program materials. I rewrite cold or triggering language to build immediate patient trust.
-                </p>
+    <!-- Services Quick Grid -->
+    <section id="services" class="py-12 px-6 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 font-bold mb-4">1</div>
+                <h3 class="font-bold text-lg text-gray-950 mb-2">Grant Copywriting</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">High-impact writing designed to win funding and clearly communicate complex human services data.</p>
             </div>
-
-            <!-- Service 2 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                <h3 class="text-xl font-bold mb-3 text-indigo-600">Grant &amp; RFP Boosting</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                    Don't lose funding to sterile writing. I inject authentic, human-centric narratives into your government bids to satisfy tough lived-expertise mandates.
-                </p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 font-bold mb-4">2</div>
+                <h3 class="font-bold text-lg text-gray-950 mb-2">User Retention</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Engaging communication frameworks built specifically for behavioral health applications and platforms.</p>
             </div>
-
-            <!-- Service 3 -->
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                <h3 class="text-xl font-bold mb-3 text-indigo-600">Neuro-Inclusive Strategy</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                    Tailored content strategy for TBI and justice-impacted individuals. I optimize your app or platform's UX copy to prevent cognitive overload.
-                </p>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 font-bold mb-4">3</div>
+                <h3 class="font-bold text-lg text-gray-950 mb-2">Dignifying Communication</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Strategic brand messaging backed by direct, real-world experience in justice-impact and trauma-informed systems.</p>
             </div>
-
         </div>
-    </main>
+    </section>
 
-    <!-- Footer Call to Action -->
-    <footer class="bg-gray-900 text-white text-center py-16 mt-20">
-        <h2 class="text-2xl font-bold mb-4">Let's build something relevant.</h2>
-        <p class="text-gray-400 max-w-md mx-auto mb-8 px-4 text-sm">
-            Available for consulting contracts with behavioral health startups, non-profits, and state agencies.
-        </p>
-        <p class="text-indigo-400 font-medium">jmexperience.consulting@gmail.com</p>
+    <!-- Footer Section -->
+    <footer class="mt-20 py-16 bg-gray-950 text-white px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Let's build something relevant.</h2>
+            <p class="text-gray-400 max-w-md mx-auto mb-8 text-sm leading-relaxed">
+                Available for consulting contracts with behavioral health startups, non-profits, and state agencies.
+            </p>
+            <div class="inline-block bg-gray-900 border border-gray-800 rounded-xl px-6 py-3">
+                <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold mb-1">Direct Email</p>
+                <a href="mailto:jmexperience.consulting@gmail.com" class="text-indigo-400 font-semibold hover:text-indigo-300 transition text-lg break-all">
+                    jmexperience.consulting@gmail.com
+                </a>
+            </div>
+            <p class="text-xs text-gray-600 mt-12">
+                &copy; 2026 Justice in Mental Health Experience. All rights reserved.
+            </p>
+        </div>
     </footer>
 
 </body>
